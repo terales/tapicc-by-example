@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+
+          <div class="col-sm">
+            <h2>TMS (ex. Protemos)</h2>
+            <p>
+              Example of creating a job posting from TMS on some external website.
+            </p>
+            <form>
+                <div class="form-group">
+                  <label for="tms-job-type">Type</label>
+                  <select id="tms-job-type" class="form-control">
+                    <option>Translation</option>
+                    <option>Interpreting</option>
+                    <option>Potential</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="tms-job-summary">Summary</label>
+                    <input id="tms-job-summary" class="form-control" type="text"/>
+                  </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Description</label>
+                  <textarea id="tms-job-description" class="form-control" placeholder="Any HTML text allowed here"></textarea>
+                </div>
+                <div class="form-group">
+                  <label for="tms-job-status">Status</label>
+                  <select id="tms-job-status" class="form-control">
+                    <option>Open</option>
+                    <option>Closed</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="tms-job-lang-pairs">Language pairs</label>
+                  <select id="tms-job-lang-pairs" class="form-control">
+                    <option>Open</option>
+                    <option>Closed</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="tms-job-specialties">Specialties</label>
+                  <select id="tms-job-specialties" class="form-control">
+                    <option>Open</option>
+                    <option>Closed</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Post new job</button>
+                <button type="submit" class="btn btn-primary">Update job (appears after post)</button>
+                <button type="submit" class="btn btn-primary">Close job (appears after post)</button>
+              </form>
+          </div>
+
+          <div class="col-sm">
+            <h2>API Interaction</h2>
+            <p>→ POST /job [details expandable] →</p>
+            <p>← response to POST /job [details expandable] ←</p>
+          </div>
+
+          <div class="col-sm">
+            <h2>Job posting website (ex. ProZ.com)</h2>
+            <p>
+              ProZ.com's <a href="https://www.proz.com/swagger-ui/#!/Jobs/post_job_postings" target="_blank">job posting API</a>.
+            </p>
+            <p>
+              Possible events: question from vendor, quote, expired.
+            </p>
+          </div>
+
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
